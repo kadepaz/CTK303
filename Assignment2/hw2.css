@@ -1,0 +1,116 @@
+h1 {
+    font-size:108px;
+    color: rgb(255, 200, 50);
+    transition: .5s all;
+    text-align: center;
+    font-family: "Notable", sans-serif;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+h1:hover {
+    filter: blur(7px);
+}
+
+/*
+h2 {
+    grid-column: span 9;
+    padding-top:10px;
+    font-size:40px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+*/
+
+h2 {
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-size: 20px;
+}
+
+#wrap {
+    border-bottom-left-radius: 170px;
+    border-bottom-right-radius: 170px; 
+    width: 100%; /* Sets the width to 80% of the parent container */
+    margin: 1em auto;
+    background-color: rgb(255, 244, 237);
+    height:650px;
+    animation: Change 5s ease-out;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@keyframes Change {
+  0%   { opacity: .0;}
+  100% { opacity: 1.0;} 
+}
+
+#img {
+    width: 300px;
+    height:300px;
+    overflow: hidden;
+    grid-column:span 3;
+    translate: 130px 36px;
+}
+
+#img img{
+    width: 300px;
+    transition: all .6s;
+}
+
+#img:hover img{
+    transform: scale(1.1);
+}
+
+#img2 {
+    grid-column: span 3;
+    transform: scale(0.6);
+    translate:0px -150px;
+}
+
+#img2 img {
+    transition: all .5s;
+}
+
+#img2:hover img{
+    filter: blur(5px);
+}
+
+#img3 {
+    width:250px;
+    position:absolute;
+    top:380px;
+    left:650px;
+}
+
+#img3 img{
+    width:250px;
+    transition: all 2s ease-in;
+}
+
+#img3:hover img{
+    translate: 0px 120px;
+}
+
+
+
+@keyframes record { 
+  0%   { top: 400;}
+  100% { top: 500px; }
+}
+
+body {
+    background-color:black;
+}
+
+ol {
+    grid-column: span 4;
+    margin-left:150px;
+    margin-top:20px;
+}
+
+ol li {
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-size:30px;
+    list-style: none;
+}
