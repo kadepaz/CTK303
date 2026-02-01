@@ -1,0 +1,126 @@
+body {
+    background-image: url(grass.jpeg);
+    background-repeat: repeat;
+    background-size: 250px 250px;
+}
+
+h1 {
+  text-align:center;
+  margin-top:120px;
+  font-size:130px;
+  font-family: "Micro 5", sans-serif;
+  font-style:none;
+  padding:0;margin-bottom:10px;
+  color: rgb(71, 8, 15);
+}
+
+
+
+      .st0 {
+        fill: #fff;
+      }
+      .st1 {
+        fill: #3c2415;
+      }
+      .st2 {
+        fill: #754c29;
+      }
+      .st3 {
+        fill: #be1e2d;
+      }
+      .st4 {
+        fill: #f9ed32;
+      }
+      .st5 {
+        display: none;
+      }
+      .st6 {
+        fill: #f69320;
+      }
+
+      .st7 {
+        opacity: .59;
+      }
+
+    #BEARS {
+        width: 570px;
+        translate:445px;
+    }
+ 
+
+    #grizzly {
+      animation: gfade 1s ease;
+      transform-origin: right;
+    }
+
+    @keyframes gfade {
+      0% {transform: scale(0); opacity:0%;}
+      50% {opacity:50%;}
+      100% {transform: scale(1.0); opacity: 100%;}
+    }
+
+    #panda {
+      animation: pfade 1s ease;
+      transform-origin: left;
+    }
+
+    @keyframes pfade {
+      0% {transform: scale(0); opacity:0%;}
+      50% {opacity: 50%;}
+      100% {transform:scale(1.0); opacity: 100%}
+    }
+
+    #BOOM {
+      animation: bfade 1s ease;
+      transform-origin: center;
+    }
+
+    @keyframes bfade {
+      0% {transform: scale(0); opacity: 60%;}
+      35% {transform:scale(1.2);}
+      100% {transform: scale(1.0); opacity: 100%}
+    }
+
+    .button {
+      width:105px;
+      translate:114px -153px;
+      animation: fade 2s linear;
+    }
+
+    .button:hover{
+      transform:scale(1.2);
+    }
+
+    @keyframes fade {
+   0%   { opacity: .0;}
+  100% { opacity: 1.0;} 
+    }
+  
+  .heart {
+    width:100px;
+      display: block;      
+    margin-left: auto;    
+    margin-right: auto;
+    animation: fade 2s linear;
+  }
+
+  .options {
+    width:100px;
+    translate:470px -107px;
+    animation: fade 2s linear;
+  }
+
+  .options:hover {
+    transform:scale(1.2);
+  }
+
+  .pause:hover {
+  transform:scale(1.2);
+  }
+
+  .pause {
+    width:100px;
+    translate:780px -107px;
+    animation: fade 2s linear;
+
+  }
