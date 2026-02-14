@@ -1,0 +1,87 @@
+nav {
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.blank {
+    height:6em;
+    border:none;
+}
+#blank2{
+    color:white;
+    transform:scale(1.5);
+}
+
+   /* .blank:nth-child(1) {
+        background: linear-gradient(to left, #ff9dba, #ffc7d8); /* keep as solid color? or add images? 
+    }
+    .blank:nth-child(2) {
+        background: linear-gradient(to left, #ffe6b5, #fff2d7); 
+    }
+    .blank:nth-child(3) {
+        background: linear-gradient(to left, #774905, #ac8f65); 
+    }
+    .blank:nth-child(4) {
+        background: linear-gradient(to left, #8da14b, #a5ac8c); 
+    } */
+
+    .blank:nth-child(1) {
+        background: #ff9dba;
+    }
+    .blank:nth-child(2) {
+        background:#ffe6b5; 
+    }
+    .blank:nth-child(3) {
+        background:  #774905; 
+    }
+    .blank:nth-child(4) {
+        background: #8da14b; 
+    }
+
+h1 {
+    color: white;
+    font-size:2rem;
+    font-family: "Darumadrop One";
+}
+
+h2 {
+    color:#ff9dba;
+    font-family: "Darumadrop One";
+    margin-bottom:0px; padding-bottom:0px;
+    font-size:1.5rem;
+}
+
+#img{
+    width:100%;
+    border-radius:7px;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    color:#774905;
+}
+
+footer{
+    justify-content:center;
+    width:97.85%;
+    background:#774905;
+    display:flex;
+    font-size:1.2em;
+    font-family:"Darumadrop One";
+    color:#ffe6b5;
+    padding:0.5em;
+}
+
+@media all and (min-width: 30rem){ /* 1st breakpoint/tablet */
+  nav { grid-template-columns: repeat(4,1fr); margin-top:2em; }
+  h2 {font-size:2rem;}
+  #blank2 {display:none;}
+  #textBox {margin-left:0.25em;}
+}
+
+@media all and (min-width: 45rem){ /*2nd breakpoint/desktop */
+  body { max-width: 900px; margin: 0rem auto; }
+  #img {width:55%; float:right;margin-top:1rem;margin-right:.25rem;margin-bottom:2em;}
+  h2{text-align:left; width:45%;text-align:center;}
+  #textBox {background:#8da14b;float:left;width:40%;padding:.8em;}
+}
