@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mother's Day!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Lexend+Peta&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color:rgb(68, 16, 16);
+      }
+      h2 {color:antiquewhite;font-family:"Jacquarda Bastarda 9"}
+      #flowers{
+        translate:23em -43em;
+        animation: fslide 1.7s ease-out;
+        transform-origin: center;
+        position:fixed;
+        width:1300px;
+      }
+      #flowers2{width:75px;height:45px;rotate:90deg;}
+      @keyframes fslide { 
+      0%   { transform: translate(300px, 0); opacity:0%;}
+      100% { transform: translate(0, 0);opacity:100%;}
+      }
+      .navbar-brand{padding:0px;margin:0px;}
+      #polaroid{
+        width:1000px;
+        translate:-100px -30px;
+        margin:0px; padding:0px;
+        position:fixed;
+      }
+      h1{padding-left:4.5em;;padding-right:0px;color:rgb(255, 252, 233);font-size:6em;font-family:"Jacquarda Bastarda 9";padding-bottom:.3em;}
+      #list{
+        padding-top:6em;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+<nav class="navbar bg-warning-subtle fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="mama.html"><img id="flowers2" src="miniflowers.svg" alt="flower cross stitch"/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="mama.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kalia.html">Love, Kalia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blue.html">Love, Blue</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="lucia.html">Love, Lucia</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="kezzie.html">Love, Kezziah</a>
+        </li>
+      </ul>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      </div>
+  </div>
+</nav>
+
+    <h2>Happy Mother's Day!</h2>
+    <img id="polaroid" src="mamaFRONT.svg" alt="mama and her flowers">
+    <ul id="list">
+        <li><h1>hey</h1></li>
+        <li><h1>there</h1></li>
+        <li><h1>pretty</h1></li>
+        <li><h1>lady ~</h1></li>
+    </ul> <!-- I realize now it would have been easier to use a <br> -->
+    <img id="flowers" src="stitch.svg" alt="flower cross stitch"/>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+  </html>
